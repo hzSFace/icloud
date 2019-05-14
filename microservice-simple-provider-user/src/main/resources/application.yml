@@ -1,0 +1,18 @@
+#tomcat port
+server:
+  port: 8000
+
+spring:
+  jpa:
+    generate-ddl: true
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+  datasource:                       #指定数据源
+    platform: h2                    #指定数据类型
+    schema: classpath:db/schema.sql #指定h2数据库的建表脚本
+    data: classpath:db/data.sql     #指定h2数据库的数据脚本
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
