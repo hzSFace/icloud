@@ -1,0 +1,15 @@
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+server:
+  port: 8002
+spring:
+  application:
+    name: consumer-movie-ribbon
+
+#去掉microservice-provider-user表示对所有RibbonClient都是用RandomRule规则
+microservice-provider-user:
+  ribbon:
+    NFLoadBanlancerRuleClassName: com.netflix.loadblancer.RandomRule

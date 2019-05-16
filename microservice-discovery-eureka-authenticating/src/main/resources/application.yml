@@ -1,0 +1,15 @@
+server:
+  port: 8761
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://root:liu123@localhost:${server.port}/eureka/
+
+spring:
+  security:
+    user:
+      name: root
+      password: liu123
