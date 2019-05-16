@@ -14,6 +14,33 @@
     <name>icloud</name>
     <description>Spring Cloud</description>
 
+    <modules>
+        <!-- 硬编码实现服务调用 -->
+        <module>microservice-simple-provider-user</module>
+        <module>microservice-simple-consumer-movie</module>
+        <!-- 服务监控 -->
+        <module>microservice-simple-actuator</module>
+        <!-- Eureka Server -->
+        <module>microservice-discovery-eureka</module>
+        <module>microservice-provider-user</module>
+        <module>microservice-consumer-movie</module>
+        <!-- Eureka Server集群 -->
+        <module>microservice-discovery-eureka-cluster</module>
+        <!-- Eureka Server用户认证 -->
+        <module>microservice-discovery-eureka-authenticating</module>
+        <!-- Eureka Server自定义原数据 -->
+        <module>microservice-provider-user-metadata</module>
+        <module>microservice-consumer-movie-metadata</module>
+        <!-- Eureka Server and Ribbon 实现微服务调用负载均衡 -->
+        <module>microservice-consumer-movie-ribbon</module>
+        <!-- Java代码实现自定义Ribbon配置 -->
+        <module>microservice-consumer-movie-ribbon-customizing</module>
+        <!-- 配置文件属性实现自定义Ribbon配置 -->
+        <module>microservice-consumer-movie-ribbon-customizing-property</module>
+        <!-- 使用Feign实现声明式REST调用，也就是简化URL的拼接 -->
+        <module>microservice-consumer-movie-feign</module>
+    </modules>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
