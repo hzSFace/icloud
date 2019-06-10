@@ -39,6 +39,8 @@
         <module>microservice-consumer-movie-ribbon-customizing-property</module>
         <!-- 使用Feign实现声明式REST调用，也就是简化URL的拼接 -->
         <module>microservice-consumer-movie-feign</module>
+        <!-- 自定义Feign配置，使用Feign自定义注解 -->
+        <module>microservice-consumer-movie-feign-customizing</module>
     </modules>
 
     <properties>

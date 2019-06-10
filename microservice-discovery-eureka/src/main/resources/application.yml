@@ -3,11 +3,11 @@ server:
 
 eureka:
   client:
-    #ÊÇ·ñ½«×Ô¼º×¢²áµ½Eureka Server£¬Ä¬ÈÏtrue£¬ÓÉÓÚµ±Ç°Ó¦ÓÃ¾ÍÊÇEureka Server£¬¹ÊÉèÖÃÎªfalse
+    #æ˜¯å¦å°†è‡ªå·±æ³¨å†Œåˆ°Eureka Serverï¼Œé»˜è®¤trueï¼Œç”±äºå½“å‰åº”ç”¨å°±æ˜¯Eureka Serverï¼Œæ•…è®¾ç½®ä¸ºfalse
     register-with-eureka: false
-    #ÊÇ·ñ´ÓEureka Server»ñÈ¡×¢²áĞÅÏ¢£¬Ä¬ÈÏtrue£¬ÓÉÓÚÊÇÒ»¸öµ¥µãµÄEureka Server£¬²»ĞèÒª´ÓÆäËûEureka Server½ÚµãÍ¬²½Êı¾İ£¬¹ÊÉèÖÃÎªfalse
+    #æ˜¯å¦ä»Eureka Serverè·å–æ³¨å†Œä¿¡æ¯ï¼Œé»˜è®¤trueï¼Œç”±äºæ˜¯ä¸€ä¸ªå•ç‚¹çš„Eureka Serverï¼Œä¸éœ€è¦ä»å…¶ä»–Eureka ServerèŠ‚ç‚¹åŒæ­¥æ•°æ®ï¼Œæ•…è®¾ç½®ä¸ºfalse
     fetch-registry: false
-    #ÉèÖÃEureka Server½»»¥µÄµØÖ·£¬²éÑ¯ºÍ×¢²á·şÎñ¶¼ĞèÒªÒÀÀµÕâ¸öµØÖ·£¬¶à¸öµØÖ·ÓÃ,·Ö¸ô
+    #è®¾ç½®Eureka Serveräº¤äº’çš„åœ°å€ï¼ŒæŸ¥è¯¢å’Œæ³¨å†ŒæœåŠ¡éƒ½éœ€è¦ä¾èµ–è¿™ä¸ªåœ°å€ï¼Œå¤šä¸ªåœ°å€ç”¨,åˆ†éš”
     service-url:
       defaultZone: http://localhost:${server.port}/eureka/
 
