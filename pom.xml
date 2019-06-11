@@ -41,6 +41,8 @@
         <module>microservice-consumer-movie-feign</module>
         <!-- 自定义Feign配置，使用Feign自定义注解 -->
         <module>microservice-consumer-movie-feign-customizing</module>
+        <!-- 自定义Feign配置，使用Feign自定义注解 -->
+        <module>microservice-provider-user-with-auth</module>
     </modules>
 
     <properties>
